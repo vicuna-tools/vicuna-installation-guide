@@ -8,7 +8,7 @@ The "vicuna-installation-guide" provides step-by-step instructions for installin
 ## Installation
 ### One-line install script
 ```
-git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp/models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-4bit/resolve/main/ggml-vicuna-13b-4bit-rev1.bin
+git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-4bit/resolve/main/ggml-vicuna-13b-4bit-rev1.bin
 ```
 
 ### Manual Installation
@@ -16,11 +16,15 @@ git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp/models && wget 
 ```
 git clone https://github.com/ggerganov/llama.cpp
 ```
-#### 2. Move to the llama.cpp/models folder
+#### 2. Make it!
+```
+make -j
+```
+#### 3. Move to the llama.cpp/models folder
 ```
 cd llama.cpp/models
 ```
-#### 3. Download the Vicuna model (13B) from Huggingface
+#### 4. Download the Vicuna model (13B) from Huggingface
 ```
 https://huggingface.co/eachadea/ggml-vicuna-13b-4bit/resolve/main/ggml-vicuna-13b-4bit-rev1.bin
 ```
