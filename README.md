@@ -1,5 +1,7 @@
 # Vicuna Installation Guide
 The "vicuna-installation-guide" provides step-by-step instructions for installing and configuring Vicuna-13B
+### latest changes
+- updated this guide to vicuna version 1.1
 ## Requirements
 - The Vicuna model needs ~10GB of CPU RAM, If you don't have enough RAM, you can increase the size of your virtual RAM (swap)
   A tutorial on how to increase the swapfile on Linux: https://arcolinux.com/how-to-increase-the-size-of-your-swapfile/
