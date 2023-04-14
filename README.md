@@ -6,9 +6,9 @@ The "vicuna-installation-guide" provides step-by-step instructions for installin
 - The git and wget package 
 
 ## Installation
-### One-line install script
+### One-line install script for Vicuna 1.1
 ```
-git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-4bit/resolve/main/ggml-vicuna-13b-4bit-rev1.bin
+git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/TheBloke/vicuna-13B-1.1-GPTQ-4bit-128g-GGML/resolve/main/vicuna-13B-1.1-GPTQ-4bit-128g.GGML.bin
 ```
 
 ### Manual Installation
@@ -24,9 +24,9 @@ make -j
 ```
 cd llama.cpp/models
 ```
-#### 4. Download the Vicuna model (13B) from Huggingface
+#### 4. Download the latest Vicuna model (13B) from Huggingface
 ```
-https://huggingface.co/eachadea/ggml-vicuna-13b-4bit/resolve/main/ggml-vicuna-13b-4bit-rev1.bin
+wget https://huggingface.co/TheBloke/vicuna-13B-1.1-GPTQ-4bit-128g-GGML/resolve/main/vicuna-13B-1.1-GPTQ-4bit-128g.GGML.bin
 ```
 ## Usage
 #### Navigate back to the llama.cpp folder
@@ -35,5 +35,5 @@ cd ..
 ```
 #### Run the vicuna model with llama.cpp's chat-with-bob.txt
 ```
-./main -m ./models/ggml-vicuna-13b-4bit-rev1.bin --repeat_penalty 1.0 --color -i -r "User:" -f prompts/chat-with-bob.txt
+./main -m ./models/vicuna-13B-1.1-GPTQ-4bit-128g.GGML.bin --repeat_penalty 1.0 --color -i -r "User:" -f prompts/chat-with-bob.txt
 ```
