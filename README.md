@@ -19,13 +19,17 @@ git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp && make -j && c
 ```
 git clone https://github.com/ggerganov/llama.cpp
 ```
+#### 1.1 Change directory
+```
+cd llama.cpp
+```
 #### 2. Make it!
 ```
 make -j
 ```
 #### 3. Move to the llama.cpp/models folder
 ```
-cd llama.cpp/models
+cd models
 ```
 #### 4. Download the latest Vicuna model (13B) from Huggingface
 ```
