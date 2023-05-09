@@ -1,11 +1,12 @@
 # Vicuna Installation Guide
 
-Detailed instructions for installing and configuring Vicuna-13B
+Detailed instructions for installing and configuring Vicuna
 
 <a href="#installation">Installation</a> - <a href="#usage">Usage</a>
 
 
 ### latest changes
+- added instructions for 7B model
 - fixed the `wget` command 
 - modified the `chat-with-vicuna-v1.txt` in my llama.cpp fork
 - updated this guide to vicuna version 1.1
@@ -16,9 +17,13 @@ Detailed instructions for installing and configuring Vicuna-13B
 - A Unix based operating system is recommended
 
 ## Installation
-### One-line install script for Vicuna 1.1
+### One-line install script for Vicuna-1.1-13B
 ```
 git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-q5_1.bin
+```
+### One-line install script for Vicuna-1.1-7B
+```
+git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-vic7b-q5_1.bin
 ```
 
 ### Manual Installation
@@ -38,16 +43,20 @@ make -j
 ```
 cd models
 ```
-#### 5. Download the latest Vicuna model (13B) from Huggingface
+#### 5. a) Download the latest Vicuna model (13B) from Huggingface
 ```
 wget https://huggingface.co/eachadea/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-q5_1.bin
+```
+#### 5. b) Download the latest Vicuna model (7B) from Huggingface
+```
+wget https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-vic7b-q5_1.bin
 ```
 ## Usage
 #### Navigate back to the llama.cpp folder
 ```
 cd ..
 ```
-#### Run the vicuna model with llama.cpp's chat-with-vicuna-v1.txt
+#### Example of how to run the 13b model with llama.cpp's chat-with-vicuna-v1.txt 
 ```
 ./main -m models/ggml-vic13b-q5_1.bin -f 'prompts/chat-with-vicuna-v1.txt' -r 'User:' --temp 0.36
 ```
