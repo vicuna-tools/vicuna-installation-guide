@@ -64,3 +64,9 @@ cd ..
 ```
 ./main -m models/ggml-vic13b-q5_1.bin -f 'prompts/chat-with-vicuna-v1.txt' -r 'User:' --temp 0.36
 ```
+
+
+[stars-shield]: https://img.shields.io/github/stars/vicuna-tools/vicuna-installation-guide.svg?style=for-the-badge
+[stars-url]: https://github.com/vicuna-tools/vicuna-installation-guide/stargazers
+[forks-shield]: https://img.shields.io/github/forks/vicuna-tools/vicuna-installation-guide.svg?style=for-the-badge
+[forks-url]: https://github.com/vicuna-tools/vicuna-installation-guide/network/members
