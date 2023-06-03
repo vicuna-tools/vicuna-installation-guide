@@ -1,5 +1,9 @@
 # Vicuna Installation Guide
 
+
+[![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+
 Detailed instructions for installing and configuring Vicuna
 
 <a href="#installation">Installation</a> - <a href="#usage">Usage</a>
