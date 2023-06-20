@@ -10,6 +10,7 @@ Detailed instructions for installing and configuring Vicuna
 
 
 ### latest changes
+- fixed the guide
 - added instructions for 7B model
 - fixed the `wget` command 
 - modified the `chat-with-vicuna-v1.txt` in my llama.cpp fork
