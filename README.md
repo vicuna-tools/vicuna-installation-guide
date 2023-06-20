@@ -23,11 +23,11 @@ Detailed instructions for installing and configuring Vicuna
 ## Installation
 ### One-line install script for Vicuna-1.1-13B
 ```
-git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-uncensored-q5_1.bin
+git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/CRD716/ggml-vicuna-1.1-quantized/resolve/main/ggml-vicuna-13B-1.1-q5_1.bin
 ```
 ### One-line install script for Vicuna-1.1-7B
 ```
-git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-vic7b-uncensored-q5_1.bin
+git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/CRD716/ggml-vicuna-1.1-quantized/resolve/main/ggml-vicuna-7b-1.1-q5_1.bin
 ```
 
 ### Manual Installation
@@ -49,11 +49,11 @@ cd models
 ```
 #### 5. a) Download the latest Vicuna model (13B) from Huggingface
 ```
-wget https://huggingface.co/eachadea/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-uncensored-q5_1.bin
+wget -c https://huggingface.co/CRD716/ggml-vicuna-1.1-quantized/resolve/main/ggml-vicuna-13B-1.1-q5_1.bin
 ```
 #### 5. b) Download the latest Vicuna model (7B) from Huggingface
 ```
-wget https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-vic7b-uncensored-q5_1.bin
+wget -c https://huggingface.co/CRD716/ggml-vicuna-1.1-quantized/resolve/main/ggml-vicuna-7b-1.1-q5_1.bin
 ```
 ## Usage
 #### Navigate back to the llama.cpp folder
@@ -62,7 +62,7 @@ cd ..
 ```
 #### Example of how to run the 13b model with llama.cpp's chat-with-vicuna-v1.txt 
 ```
-./main -m models/ggml-vic13b-q5_1.bin -f 'prompts/chat-with-vicuna-v1.txt' -r 'User:' --temp 0.36
+./main -m models/ggml-vicuna-13B-1.1-q5_1.bin --repeat_penalty 1.0 --color -i -r "User:" -f prompts/chat-with-vicuna-v1.txt
 ```
 
 
